@@ -31,7 +31,7 @@ var reqAnimationFrame = requestAnimationFrame ||
                         webkitRequestAnimationFrame ||
                         mozRequestAnimationFrame ||
                         msRequestAnimationFrame ||
-                        oRequestAnimationFrame ||;
+                        oRequestAnimationFrame;
 
 (function loop() {
 	reqAnimationFrame(function() {
