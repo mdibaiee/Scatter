@@ -27,11 +27,11 @@ function add(x, y) {
   });
 }
 
-var reqAnimationFrame = webkitRequestAnimationFrame ||
+var reqAnimationFrame = requestAnimationFrame ||
+                        webkitRequestAnimationFrame ||
                         mozRequestAnimationFrame ||
                         msRequestAnimationFrame ||
-                        oRequestAnimationFrame ||
-                        requestAnimationFrame;
+                        oRequestAnimationFrame ||;
 
 (function loop() {
 	reqAnimationFrame(function() {
