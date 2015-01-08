@@ -27,8 +27,8 @@ function add(x, y) {
   });
 }
 
-var reqAnimationFrame = mozRequestAnimationFrame ||
-                        webkitRequestAnimationFrame ||
+var reqAnimationFrame = webkitRequestAnimationFrame ||
+                        mozRequestAnimationFrame ||
                         msRequestAnimationFrame ||
                         oRequestAnimationFrame ||
                         requestAnimationFrame;
