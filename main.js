@@ -27,8 +27,14 @@ function add(x, y) {
   });
 }
 
+var reqAnimationFrame = mozRequestAnimationFrame ||
+                        webkitRequestAnimationFrame ||
+                        msRequestAnimationFrame ||
+                        oRequestAnimationFrame ||
+                        requestAnimationFrame;
+
 (function loop() {
-	mozRequestAnimationFrame(function() {
+	reqAnimationFrame(function() {
 		c.clearRect(0, 0, $c.width, $c.height);
 
 		for( var i = 0; i < balls.length; i++ ) {
